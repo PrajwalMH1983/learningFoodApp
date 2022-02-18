@@ -1,4 +1,5 @@
 package com.learning.dto;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -8,26 +9,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
-public class Role {
-	
-	
-	
-	@Id 
+public class FoodType {
+	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int roleId;
-
+	private int id;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(length = 30)
-	private EROLE roleName;
-	
-	
+	private EFood foodType;
 }
-

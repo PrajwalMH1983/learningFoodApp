@@ -1,4 +1,4 @@
-package com.learning.Utils;
+package com.learning.utils;
 
 import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl;

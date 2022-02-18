@@ -40,9 +40,7 @@ public class Food {
 	@NotNull
 	private int foodCost;
 	
-	@Size(max=100)
-	@NotBlank
-	private String foodType;
+	private EFood foodType;
 	
 	
 	@NotBlank

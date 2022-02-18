@@ -1,7 +1,4 @@
-spring:
-  jackson:
-    serialization:
-      fail-on-empty-beans: false     
+spring:  
   datasource:
     url: jdbc:mysql://localhost:3306/learning
     username: root
@@ -15,10 +12,15 @@ spring:
     
     hibernate:
       naming:
-        physical-strategy: com.learning.Utils.CustomNamingStrategy
+        physical-strategy: com.learning.utils.CustomNamingStrategy
       ddl-auto: update
+  jackson:
+    serialization:
+      fail-on-empty-beans: FALSE
 server:
-  port: 9005
-  servlet:
-    context-path: /api
-    
+  port: 9008
+
+learning:
+  app:
+    jwtSecret: secretkey
+    jwtExpirationMs: 86400000

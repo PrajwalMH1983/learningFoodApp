@@ -18,9 +18,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.learning.Utils.CustomNamingStrategy;
 import com.learning.dto.Login;
-import com.learning.dto.Register;
+import com.learning.dto.User;
+import com.learning.utils.CustomNamingStrategy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -54,8 +54,8 @@ public class Login implements Comparable<Login>{
 	
 	
 	@OneToOne
-    @JoinColumn(name = "regId")
+    @JoinColumn(name = "userId")
     @JsonProperty(access=Access.WRITE_ONLY)
-	private Register register;
+	private User user;
 	
 }

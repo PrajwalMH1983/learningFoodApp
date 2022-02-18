@@ -1,4 +1,4 @@
-package com.learning.Utils;
+package com.learning.utils;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;

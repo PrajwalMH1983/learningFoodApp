@@ -10,6 +10,6 @@ import com.learning.dto.Food;
 @Repository
 public interface FoodRepository extends JpaRepository<Food, Integer> {
 	Boolean existsByFoodName(String foodName);
-
+	Optional<Food> findByFoodName(String foodName);
 	boolean existsById(int id);
 }

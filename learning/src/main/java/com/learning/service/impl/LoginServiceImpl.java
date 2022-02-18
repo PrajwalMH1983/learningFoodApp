@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.learning.dto.Login;
 import com.learning.dto.Role;
-import com.learning.dto.Register;
+import com.learning.dto.User;
 import com.learning.exception.IdNotFoundException;
 
 import com.learning.repository.LoginRepository;
